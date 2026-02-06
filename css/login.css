@@ -1,0 +1,19 @@
+/* Simple responsive styles for the login page */
+:root{--bg:#f6f8fb;--card:#ffffff;--accent:#0b79d0;--muted:#6b7280}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#111}
+.login-container{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.login-form{width:100%;max-width:420px;background:var(--card);padding:28px;border-radius:10px;box-shadow:0 6px 18px rgba(11,25,40,0.08)}
+.login-form h1{margin:0 0 18px;font-size:20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.field input{width:100%;padding:10px 12px;border:1px solid #e6e9ee;border-radius:6px;font-size:14px}
+.password-wrap{display:flex;gap:8px}
+.password-wrap input{flex:1}
+#togglePassword{background:transparent;border:1px solid #e6e9ee;border-radius:6px;padding:8px 10px;cursor:pointer}
+.options{margin-bottom:14px;font-size:14px;color:var(--muted)}
+.submit{width:100%;padding:10px 12px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer}
+.helper{margin-top:12px;font-size:13px;color:var(--muted)}
+.error{color:#b91c1c;font-size:13px;margin-top:6px;display:block}
+.form-message{margin-top:12px;font-size:14px}
+@media (max-width:420px){.login-form{padding:20px;border-radius:8px}}
